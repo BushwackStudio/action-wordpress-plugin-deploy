@@ -10,17 +10,15 @@ Contributing isn't just writing code - it's anything that improves the project. 
 
 ### Reporting bugs
 
-If you're running into an issue with the action, please take a look through [existing issues](https://github.com/10up/action-wordpress-plugin-deploy/issues) and [open a new one](https://github.com/10up/action-wordpress-plugin-deploy/issues/new) if needed. If you're able, include a link to the log output from the failed run.
+If you're running into an issue with the action, please take a look through [existing issues](https://github.com/BushwackStudio/action-wordpress-plugin-deploy/issues) and [open a new one](https://github.com/BushwackStudio/action-wordpress-plugin-deploy/issues/new) if needed. If you're able, include a link to the log output from the failed run.
 
 ### Suggesting enhancements
 
-New features and enhancements are also managed via [issues](https://github.com/10up/action-wordpress-plugin-deploy/issues).
+New features and enhancements are also managed via [issues](https://github.com/BushwackStudio/action-wordpress-plugin-deploy/issues).
 
 ### Pull requests
 
 Pull requests represent a proposed solution to a specified problem. They should always reference an issue that describes the problem and contains discussion about the problem itself. Discussion on pull requests should be limited to the pull request itself, i.e. code review.
-
-For more on how 10up writes and manages code, check out our [10up Engineering Best Practices](https://10up.github.io/Engineering-Best-Practices/).
 
 ## Workflow
 
