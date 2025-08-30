@@ -157,8 +157,8 @@ if [[ "$BUILD_DIR" = false ]]; then
 		# Mark github workspace as safe directory.
 		git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-		git config --global user.email "10upbot+github@10up.com"
-		git config --global user.name "10upbot on GitHub"
+		git config --global user.email "$USER_EMAIL"
+		git config --global user.name "$USER_NAME"
 
 		# Ensure git archive will pick up any changed files in the directory try.
 		test "$(git ls-files --deleted)" && git rm "$(git ls-files --deleted)"
