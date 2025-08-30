@@ -2,13 +2,9 @@
 
 > Deploy your plugin to the WordPress.org repository using GitHub Actions.
 
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![Release Version](https://img.shields.io/github/release/10up/action-wordpress-plugin-deploy.svg)](https://github.com/10up/action-wordpress-plugin-deploy/releases/latest) [![MIT License](https://img.shields.io/github/license/10up/action-wordpress-plugin-deploy.svg)](https://github.com/10up/action-wordpress-plugin-deploy/blob/develop/LICENSE) [![Automated Tests](https://github.com/10up/action-wordpress-plugin-deploy/actions/workflows/test.yml/badge.svg)](https://github.com/10up/action-wordpress-plugin-deploy/actions/workflows/test.yml)
+[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![Release Version](https://img.shields.io/github/release/BushwackStudio/action-wordpress-plugin-deploy.svg)](https://github.com/BushwackStudio/action-wordpress-plugin-deploy/releases/latest) [![MIT License](https://img.shields.io/github/license/BushwackStudio/action-wordpress-plugin-deploy.svg)](https://github.com/BushwackStudio/action-wordpress-plugin-deploy/blob/develop/LICENSE) [![Automated Tests](https://github.com/BushwackStudio/action-wordpress-plugin-deploy/actions/workflows/test.yml/badge.svg)](https://github.com/BushwackStudio/action-wordpress-plugin-deploy/actions/workflows/test.yml)
 
 This Action commits the contents of your Git tag to the WordPress.org plugin repository using the same tag name. It can exclude files as defined in either `.distignore` or `.gitattributes`, and moves anything from a `.wordpress-org` subdirectory to the top-level `assets` directory in Subversion (plugin banners, icons, and screenshots).
-
-### ☞ For updating the readme and items in the assets directory between releases, please see our [WordPress.org Plugin Readme/Assets Update Action](https://github.com/10up/action-wordpress-plugin-asset-update)
-
-### ☞ Check out our [collection of WordPress-focused GitHub Actions](https://github.com/10up/actions-wordpress)
 
 ## Configuration
 
@@ -25,6 +21,8 @@ This Action commits the contents of your Git tag to the WordPress.org plugin rep
 * `VERSION` - Defaults to the tag name.  We do not recommend setting this except for testing purposes.
 * `ASSETS_DIR` - Defaults to `.wordpress-org`. This is customizable for other locations of WordPress.org plugin repository-specific assets that belong in the top-level `assets` directory (the one on the same level as `trunk`).
 * `BUILD_DIR` - Defaults to `false`. Set this flag to the directory where you build your plugins files into, then the action will copy and deploy files from that directory. Both absolute and relative paths are supported. The relative path if provided will be concatenated with the repository root directory. All files and folders in the build directory will be deployed, `.distignore` or `.gitattributes` will be ignored.
+* `USER_EMAIL` - The user email in git config.
+* `USER_NAME` - The user name in git config.
 
 ### Inputs
 
@@ -93,10 +91,4 @@ Want to help? Check out our [contributing guidelines](CONTRIBUTING.md) to get st
 
 Our GitHub Actions are available for use and remix under the MIT license.
 
-## Support Level
-
-**Active:** 10up is actively working on this, and we expect to continue work for the foreseeable future including keeping tested up to the most recent version of WordPress.  Bug reports, feature requests, questions, and pull requests are welcome.
-
-## Like what you see?
-
-<a href="http://10up.com/contact/"><img src="https://github.com/10up/.github/blob/trunk/profile/10up-github-banner.jpg" width="850" alt="Work with the 10up WordPress Practice at Fueled"></a>
+This is a fork of 10up's repository with the same name. We are greatful for their work.
