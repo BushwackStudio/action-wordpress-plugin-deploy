@@ -92,6 +92,16 @@ if [[ "$BUILD_DIR" != false ]]; then
 	echo "ℹ︎ BUILD_DIR is $BUILD_DIR"
 fi
 
+if [[ -z "$USER_EMAIL" ]]; then
+	USER_EMAIL="bushwackbot+github@elasticprobe.com"
+fi
+echo "ℹ︎ USER_EMAIL is $USER_EMAIL"
+
+if [[ -z "$USER_NAME" ]]; then
+	USER_NAME="BushwackBot on GitHub"
+fi
+echo "ℹ︎ USER_NAME is $USER_NAME"
+
 SVN_URL="https://plugins.svn.wordpress.org/${SLUG}/"
 SVN_DIR="${HOME}/svn-${SLUG}"
 
